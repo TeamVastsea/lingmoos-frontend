@@ -1,8 +1,6 @@
 # LingmoOS Website
 
-## Features
-
-The following features has been installed:
+## 技术栈
 
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -10,27 +8,15 @@ The following features has been installed:
 - [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
 
-## npm scripts
+### 静态页面:
 
-Please use yarn to manage packages.
+- [ ] 首页
+- [ ] 下载页
+- [ ] 新闻页
+- [ ] 公告页
+- [ ] 语言随浏览器语言自动切换(en & cn)
 
-### Build and dev scripts
 
-- `dev` – start dev server
-- `build` – bundle application for production
-- `analyze` – analyzes application bundle with [@next/bundle-analyzer](https://www.npmjs.com/package/@next/bundle-analyzer)
+### 动态页面:
 
-### Testing scripts
-
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `jest` – runs jest tests
-- `jest:watch` – starts jest watch
-- `test` – runs `jest`, `prettier:check`, `lint` and `typecheck` scripts
-
-### Other scripts
-
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+- [ ] 可以后台发布文章, 公告, 新闻, 可以后台添加页面
