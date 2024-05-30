@@ -1,11 +1,13 @@
 import '@mantine/core/styles.css';
 import React from 'react';
-import { MantineProvider, ColorSchemeScript } from '@mantine/core';
+import {MantineProvider, ColorSchemeScript, Text} from '@mantine/core';
 import { theme } from '@/theme';
+import {HeaderMenu} from "@/app/component/HeaderMenu";
+import {Footer} from "@/app/component/Footer";
 
 export const metadata = {
-  title: 'Mantine Next.js template',
-  description: 'I am using Mantine with Next.js!',
+  title: 'LingmoOS',
+  description: 'Welcome to the LingmoOS',
 };
 
 export default function RootLayout({ children }: { children: any }) {
@@ -20,7 +22,11 @@ export default function RootLayout({ children }: { children: any }) {
         />
       </head>
       <body>
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+            <HeaderMenu />
+            {children}
+            <Footer />
+        </MantineProvider>
       </body>
     </html>
   );
