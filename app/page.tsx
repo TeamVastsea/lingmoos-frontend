@@ -1,11 +1,14 @@
-import { Welcome } from '@/components/Welcome/Welcome';
-import { ColorSchemeToggle } from '@/components/ColorSchemeToggle/ColorSchemeToggle';
+import {HeroText} from "@/app/component/HeroText";
+import {ColorSchemeToggle} from "@/components/ColorSchemeToggle/ColorSchemeToggle";
+import {Divider} from "@mantine/core";
+
 
 export default function HomePage() {
   return (
     <>
-      <Welcome />
-      <ColorSchemeToggle />
+        <HeroText />
+        <Divider />
+        <ColorSchemeToggle />
     </>
   );
 }
