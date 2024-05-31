@@ -42,6 +42,7 @@ build/Release
 node_modules/
 jspm_packages/
 .yarn/
+.yarnrc.yml
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -131,3 +132,4 @@ dist
 .pnp.*
 
 .DS_Store
+.idea/
