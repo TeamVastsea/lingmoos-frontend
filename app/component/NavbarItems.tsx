@@ -10,7 +10,7 @@ const links = [
 
 export function NavbarItems() {
     const items = links.map((item) => (
-        <Text size="xl" component="a" href={item.link}>
+        <Text key={item.label} size="xl" component="a" href={item.link}>
             {item.label}
         </Text>
     ));
