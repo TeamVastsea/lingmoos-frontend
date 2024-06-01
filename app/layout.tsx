@@ -6,8 +6,12 @@ import {MantineProvider, ColorSchemeScript, Text, AppShell} from '@mantine/core'
 import { theme } from '@/theme';
 import {HeaderMenu} from "@/app/component/HeaderMenu";
 import {Footer} from "@/app/component/Footer";
+import {useDisclosure} from "@mantine/hooks";
+import {NavbarItems} from "@/app/component/NavbarItems";
 
 export default function RootLayout({ children }: { children: any }) {
+    const [opened, { toggle }] = useDisclosure();
+
   return (
     <html lang="en">
       <head>
@@ -20,12 +24,16 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-            <AppShell>
+            <AppShell header={{ height: 57 }} aside={{ width: 0, breakpoint: "sm", collapsed: { mobile: !opened } }}>
                 <AppShell.Header>
-                    <HeaderMenu />
+                    <HeaderMenu opened={opened} toggle={toggle} />
                 </AppShell.Header>
 
-                <AppShell.Main style={{marginTop: 56}}>
+                <AppShell.Aside>
+                    <NavbarItems />
+                </AppShell.Aside>
+
+                <AppShell.Main>
                     {children}
                     <Footer />
                 </AppShell.Main>

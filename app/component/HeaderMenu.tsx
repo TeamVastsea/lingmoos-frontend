@@ -11,19 +11,12 @@ const links = [
     { link: '/about', label: 'Features' },
     { link: '/downloads', label: 'Downloads' },
     { link: '/blog', label: 'Blog' },
-    {
-        link: '#1',
-        label: 'Community',
-        links: [
-            { link: '/forum', label: 'Forum' },
-            { link: '/qq', label: 'QQ Group' },
-        ],
-    },
+    { link: 'https://bbs.lingmo.org', label: 'Community' },
     { link: '/help', label: 'Help' },
 ];
 
-export function HeaderMenu() {
-    const [opened, { toggle, close }] = useDisclosure(false);
+
+export function HeaderMenu(props: HeaderMenuProps) {
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (
@@ -84,9 +77,14 @@ export function HeaderMenu() {
                         </ActionIcon>
                         <ColorSchemeToggle />
                     </Group>
-                    <Burger opened={opened} onClick={toggle} size="sm" hiddenFrom="sm" />
+                    <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm" />
                 </div>
             </Container>
         </header>
     );
+}
+
+export interface HeaderMenuProps {
+    opened: boolean,
+    toggle: () => void,
 }

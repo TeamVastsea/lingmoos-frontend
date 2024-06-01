@@ -10,7 +10,7 @@ import {
     Space,
     SimpleGrid,
     Grid,
-    Stack,
+    Stack, Group,
 } from '@mantine/core';
 // import image from './image.svg';
 import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
@@ -53,7 +53,7 @@ export function LeastBanner() {
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
                                 Version: beta 3.6<br />
-                                Release date: 2024-04-15<br />
+                                Date: 2024-04-15<br />
                                 Size: 3.7 GB
                             </Text>
                             <Button component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">Download</Button>
