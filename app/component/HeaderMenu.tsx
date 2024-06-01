@@ -1,6 +1,6 @@
 'use client';
 
-import { ActionIcon, Burger, Center, Container, Group, Menu, rem } from '@mantine/core';
+import {ActionIcon, Burger, Center, Container, Group, Menu, Modal, rem} from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq, IconChevronDown } from '@tabler/icons-react';
 import classes from './HeaderMenu.module.css';
@@ -23,7 +23,7 @@ const links = [
 ];
 
 export function HeaderMenu() {
-    const [opened, { toggle }] = useDisclosure(false);
+    const [opened, { toggle, close }] = useDisclosure(false);
 
     const items = links.map((link) => {
         const menuItems = link.links?.map((item) => (

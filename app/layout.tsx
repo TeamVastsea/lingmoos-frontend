@@ -1,14 +1,11 @@
+'use client'
+
 import '@mantine/core/styles.css';
 import React from 'react';
-import {MantineProvider, ColorSchemeScript, Text} from '@mantine/core';
+import {MantineProvider, ColorSchemeScript, Text, AppShell} from '@mantine/core';
 import { theme } from '@/theme';
 import {HeaderMenu} from "@/app/component/HeaderMenu";
 import {Footer} from "@/app/component/Footer";
-
-export const metadata = {
-  title: 'LingmoOS',
-  description: 'Welcome to the LingmoOS',
-};
 
 export default function RootLayout({ children }: { children: any }) {
   return (
@@ -23,9 +20,16 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-            <HeaderMenu />
-            {children}
-            <Footer />
+            <AppShell>
+                <AppShell.Header>
+                    <HeaderMenu />
+                </AppShell.Header>
+
+                <AppShell.Main style={{marginTop: 56}}>
+                    {children}
+                    <Footer />
+                </AppShell.Main>
+            </AppShell>
         </MantineProvider>
       </body>
     </html>
