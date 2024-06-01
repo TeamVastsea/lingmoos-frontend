@@ -1,16 +1,17 @@
+'use client'
+
 import '@mantine/core/styles.css';
 import React from 'react';
-import {MantineProvider, ColorSchemeScript, Text} from '@mantine/core';
+import {MantineProvider, ColorSchemeScript, Text, AppShell} from '@mantine/core';
 import { theme } from '@/theme';
 import {HeaderMenu} from "@/app/component/HeaderMenu";
 import {Footer} from "@/app/component/Footer";
-
-export const metadata = {
-  title: 'LingmoOS',
-  description: 'Welcome to the LingmoOS',
-};
+import {useDisclosure} from "@mantine/hooks";
+import {NavbarItems} from "@/app/component/NavbarItems";
 
 export default function RootLayout({ children }: { children: any }) {
+    const [opened, { toggle }] = useDisclosure();
+
   return (
     <html lang="en">
       <head>
@@ -23,9 +24,20 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-            <HeaderMenu />
-            {children}
-            <Footer />
+            <AppShell header={{ height: 57 }} aside={{ width: 0, breakpoint: "sm", collapsed: { mobile: !opened } }}>
+                <AppShell.Header>
+                    <HeaderMenu opened={opened} toggle={toggle} />
+                </AppShell.Header>
+
+                <AppShell.Aside>
+                    <NavbarItems />
+                </AppShell.Aside>
+
+                <AppShell.Main>
+                    {children}
+                    <Footer />
+                </AppShell.Main>
+            </AppShell>
         </MantineProvider>
       </body>
     </html>
