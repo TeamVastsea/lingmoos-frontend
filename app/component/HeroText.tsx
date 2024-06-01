@@ -1,24 +1,23 @@
-import { Container, Text, Button, Group } from '@mantine/core';
+'use client';
+
+import { Button, Container, Group, Text } from '@mantine/core';
+import { IconDownload } from '@tabler/icons-react';
+import React from 'react';
+import { useRouter } from 'next/navigation';
 import classes from './HeroText.module.css';
-import {
-    IconArrowRight,
-    IconBrandGithub,
-    IconBrandGithubFilled,
-    IconBrandGitlab,
-    IconDownload
-} from "@tabler/icons-react";
-import {Dots} from "@/app/component/Dots";
-import React from "react";
+import { Dots } from '@/app/component/Dots';
 
 export function HeroText() {
+    const router = useRouter();
+
     return (
         <div className={classes.wrapper}>
-            <Dots className={classes.dots} style={{left: 10, top: 10}}/>
-            <Dots className={classes.dots} style={{left: 50, top: 210}}/>
-            <Dots className={classes.dots} style={{left: 30, top: 410}}/>
-            <Dots className={classes.dots} style={{left: 210, top: 10}}/>
-            <Dots className={classes.dots} style={{left: 410, top: 30}}/>
-            <Dots className={classes.dots} style={{left: 210, top: 210}}/>
+            <Dots className={classes.dots} style={{ left: 10, top: 10 }} />
+            <Dots className={classes.dots} style={{ left: 50, top: 210 }} />
+            <Dots className={classes.dots} style={{ left: 30, top: 410 }} />
+            <Dots className={classes.dots} style={{ left: 210, top: 10 }} />
+            <Dots className={classes.dots} style={{ left: 410, top: 30 }} />
+            <Dots className={classes.dots} style={{ left: 210, top: 210 }} />
             <Container size={1000} className={classes.inner}>
                 <h1 className={classes.title}>
                     <Text component="span" variant="gradient" gradient={{ from: 'indigo', to: 'violet' }} inherit>
@@ -35,22 +34,23 @@ export function HeroText() {
 
                 <Group className={classes.controls}>
                     <Button
-                        size="xl"
-                        className={classes.control}
-                        variant="gradient"
-                        gradient={{ from: 'indigo', to: 'grape' }}
-                        leftSection={<IconDownload />}
+                      size="xl"
+                      className={classes.control}
+                      variant="gradient"
+                      gradient={{ from: 'indigo', to: 'grape' }}
+                      leftSection={<IconDownload />}
+                      onClick={() => router.push('/downloads')}
                     >
                         Get started
                     </Button>
 
                     <Button
-                        component="a"
-                        href="https://git.lingmo.org/lingmo-os-team"
-                        size="xl"
-                        variant="default"
-                        className={classes.control}
-                        target="_blank"
+                      component="a"
+                      href="https://git.lingmo.org/lingmo-os-team"
+                      size="xl"
+                      variant="default"
+                      className={classes.control}
+                      target="_blank"
                     >
                         GitLab
                     </Button>
