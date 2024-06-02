@@ -1,7 +1,7 @@
 'use client';
 
 import { Container, Group, Space, Stack, Text, Title } from '@mantine/core';
-import { LeastBanner } from '@/app/downloads/component/LeastBanner';
+import { LatestBanner } from '@/app/downloads/component/LatestBanner';
 
 export default function DownloadsPage() {
     return (
@@ -22,7 +22,7 @@ export default function DownloadsPage() {
                     </Group>
 
                     <Space h={20} />
-                    <LeastBanner />
+                    <LatestBanner />
                     <Space h={10} />
 
                     <Group>
