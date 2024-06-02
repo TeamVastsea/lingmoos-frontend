@@ -4,25 +4,26 @@ import { ActionIcon, Anchor, Group, rem } from '@mantine/core';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
 import classes from './Footer.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
+import {useTranslations} from "next-intl";
 
 const links = [
-    { link: '#', label: 'Home' },
-    { link: '#', label: 'Downloads' },
-    { link: '#', label: 'Blog' },
-    { link: '#', label: 'Forum' },
+    { link: '/', label: 'home' },
+    { link: '/downloads', label: 'downloads' },
+    { link: '/blog', label: 'blog' },
+    { link: 'https://bbs.lingmo.org', label: 'community' },
 ];
 
 export function Footer() {
+    const t = useTranslations("Headers");
     const items = links.map((link) => (
         <Anchor
           c="dimmed"
           key={link.label}
           href={link.link}
           lh={1}
-          onClick={(event) => event.preventDefault()}
           size="sm"
         >
-            {link.label}
+            {t(link.label)}
         </Anchor>
     ));
 

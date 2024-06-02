@@ -25,7 +25,7 @@ export default async function RootLayout({ children, params: { locale } }:
             />
         </head>
         <body>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
             <MantineProvider theme={theme}>
                 <RootLayoutInner>
                     {children}

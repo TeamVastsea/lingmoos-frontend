@@ -1,14 +1,16 @@
 import { Button, Grid, List, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
 import classes from './LeastBanner.module.css';
+import {useTranslations} from "next-intl";
 
 export function LeastBanner() {
+    const t = useTranslations("Downloads");
     return (
         <div className={classes.wrapper}>
             <div className={classes.body}>
-                <Title className={classes.title}>Download the least LingmoOS</Title>
+                <Title className={classes.title}>{t("leastTitle")}</Title>
                 <Text fw={500} fz="lg" mb={5}>
-                    The brand new 2.0 for Lingmo OS with Debian 12, as well as other features.
+                    {t("leastDescription")}
                 </Text>
 
                 <Space h={20} />
@@ -16,7 +18,7 @@ export function LeastBanner() {
                 <Grid w="100%">
                     <Grid.Col span={9}>
                         <Stack>
-                            <Text size="lg" fw={700}>System Requirements</Text>
+                            <Text size="lg" fw={700}>{t("requirements")}</Text>
                             <List
                               spacing="xs"
                               size="sm"
@@ -27,10 +29,10 @@ export function LeastBanner() {
                                   </ThemeIcon>
                               }
                             >
-                                <List.Item>2 GB system memory</List.Item>
-                                <List.Item>2 GHz dual-core processor or better</List.Item>
-                                <List.Item>25 GB of free hard drive space</List.Item>
-                                <List.Item>3.7 GB USB or disk for installation media</List.Item>
+                                <List.Item>{t("requirementsMemory")}</List.Item>
+                                <List.Item>{t("requirementsCPU")}</List.Item>
+                                <List.Item>{t("requirementsStorage")}</List.Item>
+                                <List.Item>{t("requirementsMedia")}</List.Item>
                             </List>
                         </Stack>
                     </Grid.Col>
@@ -38,11 +40,11 @@ export function LeastBanner() {
                     <Grid.Col span={3}>
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
-                                Version: beta 3.6<br />
-                                Date: 2024-04-15<br />
-                                Size: 3.7 GB
+                                {t("version")}beta 3.6<br />
+                                {t("date")}2024-04-15<br />
+                                {t("size")}3.7 GB
                             </Text>
-                            <Button component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">Download</Button>
+                            <Button component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">{t("download")}</Button>
                             <Text size="xs">
                                 (Sourceforge)
                             </Text>
@@ -50,7 +52,6 @@ export function LeastBanner() {
                     </Grid.Col>
                 </Grid>
             </div>
-            {/*<Image src={image.src} className={classes.image} />*/}
         </div>
     );
 }

@@ -6,9 +6,13 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import classes from './HeroText.module.css';
 import { Dots } from '@/src/app/[locale]/component/Dots';
+import {useTranslations} from "next-intl";
 
 export function HeroText() {
     const router = useRouter();
+    const t = useTranslations("Index");
+
+    const description = t("description").split("%");
 
     return (
         <div className={classes.wrapper}>
@@ -22,14 +26,15 @@ export function HeroText() {
                 <h1 className={classes.title}>
                     <Text component="span" variant="gradient" gradient={{ from: 'indigo', to: 'violet' }} inherit>
                         Lingmo OS
-                    </Text><br />A operating system based on Debian GNU/Linux
+                    </Text><br />{t('title')}
                 </h1>
 
                 <Text className={classes.description} c="dimmed">
-                    Symbolizing{' '}
+                    {description[0]}
                     <Text component="span" variant="gradient" gradient={{ from: 'cyan', to: 'grape' }} inherit>
-                        nimble and smooth ink
-                    </Text>, we have created a efficiency and beautiful UI design for the system.
+                        {description[1]}
+                    </Text>
+                    {description[2]}
                 </Text>
 
                 <Group className={classes.controls}>
@@ -41,7 +46,7 @@ export function HeroText() {
                       leftSection={<IconDownload />}
                       onClick={() => router.push('/downloads')}
                     >
-                        Get started
+                        {t('getStarted')}
                     </Button>
 
                     <Button
