@@ -31,7 +31,7 @@ export default function DownloadsPage() {
                     <Group>
                         <Space w={20} />
                         <Stack>
-                            <Text size="lg" fw={700}>All downloads</Text>
+                            <Text size="lg" fw={700}>{t('allDownloads')}</Text>
                             <Text>
                                 {allDownloads[0]}
                                 <a href="https://sourceforge.net/projects/lingmo-os/files/release/iso/" target="_blank" rel="noreferrer">{allDownloads[1]}</a>
