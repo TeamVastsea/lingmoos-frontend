@@ -4,7 +4,7 @@ import { ActionIcon, Burger, Container, Group, rem } from '@mantine/core';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
 import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
-import { ColorSchemeToggle } from '@/app/component/ColorSchemeToggle';
+import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 
 const links = [
     { link: '/about', label: 'Features' },
@@ -29,7 +29,7 @@ export function HeaderMenu(props: HeaderMenuProps) {
         <header className={classes.header}>
             <Container size="md">
                 <div className={classes.inner}>
-                    <a href="/">
+                    <a href="/public">
                         <LingmoLogos.TitleWIthIcon width={200} height={24} />
                     </a>
 

@@ -5,7 +5,7 @@ import { IconDownload } from '@tabler/icons-react';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import classes from './HeroText.module.css';
-import { Dots } from '@/app/component/Dots';
+import { Dots } from '@/src/app/[locale]/component/Dots';
 
 export function HeroText() {
     const router = useRouter();
