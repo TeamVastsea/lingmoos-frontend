@@ -2,26 +2,28 @@
 
 import { ActionIcon, Burger, Container, Group, rem } from '@mantine/core';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
+import { useTranslations } from 'next-intl';
 import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
-import { ColorSchemeToggle } from '@/app/component/ColorSchemeToggle';
+import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 
 const links = [
-    { link: '/about', label: 'Features' },
-    { link: '/downloads', label: 'Downloads' },
-    { link: '/blog', label: 'Blog' },
-    { link: 'https://bbs.lingmo.org', label: 'Community' },
-    { link: '/help', label: 'Help' },
+    { link: '/about', label: 'features' },
+    { link: '/downloads', label: 'downloads' },
+    { link: '/blog', label: 'blog' },
+    { link: 'https://bbs.lingmo.org', label: 'community' },
+    { link: '/help', label: 'help' },
 ];
 
 export function HeaderMenu(props: HeaderMenuProps) {
+    const t = useTranslations('Headers');
     const items = links.map((link) => (
             <a
               key={link.label}
               href={link.link}
               className={classes.link}
             >
-                {link.label}
+                {t(link.label)}
             </a>
         ));
 

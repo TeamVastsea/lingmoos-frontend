@@ -1,0 +1,43 @@
+{
+  "Index": {
+    "title": "A operating system based on Debian GNU/Linux",
+    "description": "Symbolizing %nimble and smooth ink%, we have created a efficiency and beautiful UI design for the system.",
+    "getStarted": "Get Started",
+    "badge": "Best Linux Distribution Ever",
+    "badgeTitle": "Complete any tasks effortlessly",
+    "badgeDescription": "Lingmo OS have a user-friendly UI, as well as other features for you.",
+    "featureInteractions": "Better Interactions",
+    "featureInteractionsDescription": "Lingmo OS has redesigned the entire system, optimized visual effects, and improved user experiences",
+    "featureSecurity": "Security and Stability",
+    "featureSecurityDescription": "The underlying choice for Lingmo OS is the so-called \"rock solid\" Debian GNU/Linux, so Lingmo OS not only has aesthetic appeal but also stable characteristics",
+    "featureUI": "Smooth UI",
+    "featureUIDescription": "Lingmo OS has relatively lower hardware requirements and a smooth experience on lower hardware",
+    "featureMenu": "New Global Menu",
+    "featureMenuDescription": "Lingmo OS has a global menu at the top with all functions you need, wh ich can safe your screen space"
+  },
+  "Headers": {
+    "features": "Features",
+    "downloads": "Download",
+    "blog": "Blog",
+    "community": "Community",
+    "help": "Help",
+    "home": "Home"
+  },
+  "Downloads": {
+    "title": "Download Lingmo OS",
+    "titleDescription": "Get efficient and smooth experience out of the box with Lingmo OS",
+    "latestTitle": "Download the latest LingmoOS",
+    "latestDescription": "The brand new 2.0 for Lingmo OS with Debian 12, as well as other features.",
+    "requirements": "System Requirements",
+    "requirementsMemory": "2 GB system memory",
+    "requirementsCPU": "2 GHz dual-core processor or better",
+    "requirementsStorage": "25 GB of free hard drive space",
+    "requirementsMedia": "3.7 GB USB or disk for installation media",
+    "version": "Version: ",
+    "date": "Date: ",
+    "size": "Size: ",
+    "download": "Download",
+    "allDownloads": "All Downloads",
+    "allDownloadsDescription": "Currently, the iso is shared on the Sourceforge. Click %here% to get more info."
+  }
+}
