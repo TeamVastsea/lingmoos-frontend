@@ -1,7 +1,8 @@
-import {ActionIcon, Group, rem, Stack, Text} from '@mantine/core';
-import {useTranslations} from "next-intl";
-import {IconBrandBilibili, IconBrandGithub, IconBrandQq} from "@tabler/icons-react";
-import {ColorSchemeToggle} from "@/src/app/[locale]/component/ColorSchemeToggle";
+import { ActionIcon, Group, rem, Stack, Text } from '@mantine/core';
+import { useTranslations } from 'next-intl';
+import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
+import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
+import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
 
 const links = [
     { link: '/about', label: 'features' },
@@ -33,6 +34,7 @@ export function NavbarItems() {
                     <IconBrandQq style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
                 </ActionIcon>
                 <ColorSchemeToggle />
+                <LocaleToggle />
             </Group>
         </Stack>
     );

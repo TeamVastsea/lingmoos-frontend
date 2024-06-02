@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
+import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
 
 const links = [
     { link: '/about', label: 'features' },
@@ -50,6 +51,7 @@ export function HeaderMenu(props: HeaderMenuProps) {
                             <IconBrandQq style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
                         </ActionIcon>
                         <ColorSchemeToggle />
+                        <LocaleToggle />
                     </Group>
                     <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm" />
                 </div>
