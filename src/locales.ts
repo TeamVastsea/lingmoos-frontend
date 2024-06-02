@@ -1,1 +1,1 @@
-export const LocalesList = ['en'];
+export const LocalesList = ['en', 'zh-cn'];
