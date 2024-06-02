@@ -1,12 +1,12 @@
 'use client';
 
 import { Container, Group, Space, Stack, Text, Title } from '@mantine/core';
-import { LeastBanner } from '@/src/app/[locale]/downloads/component/LeastBanner';
-import {useTranslations} from "next-intl";
+import { useTranslations } from 'next-intl';
+import { LatestBanner } from '@/src/app/[locale]/downloads/component/LatestBanner';
 
 export default function DownloadsPage() {
     const t = useTranslations('Downloads');
-    const allDownloads = t("allDownloadsDescription").split("%");
+    const allDownloads = t('allDownloadsDescription').split('%');
     return (
         <>
             <Container size={1000}>
@@ -25,7 +25,7 @@ export default function DownloadsPage() {
                     </Group>
 
                     <Space h={20} />
-                    <LeastBanner />
+                    <LatestBanner />
                     <Space h={10} />
 
                     <Group>

@@ -1,16 +1,16 @@
 import { Button, Grid, List, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
 import { useTranslations } from 'next-intl';
-import classes from './LeastBanner.module.css';
+import classes from './LatestBanner.module.css';
 
-export function LeastBanner() {
+export function LatestBanner() {
     const t = useTranslations('Downloads');
     return (
         <div className={classes.wrapper}>
             <div className={classes.body}>
-                <Title className={classes.title}>{t('leastTitle')}</Title>
+                <Title className={classes.title}>{t('latestTitle')}</Title>
                 <Text fw={500} fz="lg" mb={5}>
-                    {t('leastDescription')}
+                    {t('latestDescription')}
                 </Text>
 
                 <Space h={20} />
