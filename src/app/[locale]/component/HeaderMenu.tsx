@@ -29,7 +29,7 @@ export function HeaderMenu(props: HeaderMenuProps) {
         <header className={classes.header}>
             <Container size="md">
                 <div className={classes.inner}>
-                    <a href="/public">
+                    <a href="/">
                         <LingmoLogos.TitleWIthIcon width={200} height={24} />
                     </a>
 
