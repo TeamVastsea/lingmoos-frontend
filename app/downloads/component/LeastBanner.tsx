@@ -1,12 +1,12 @@
 import { Button, Grid, List, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
-import classes from './LeastBanner.module.css';
+import classes from './LatestBanner.module.css';
 
-export function LeastBanner() {
+export function LatestBanner() {
     return (
         <div className={classes.wrapper}>
             <div className={classes.body}>
-                <Title className={classes.title}>Download the least LingmoOS</Title>
+                <Title className={classes.title}>Download the latest LingmoOS</Title>
                 <Text fw={500} fz="lg" mb={5}>
                     The brand new 2.0 for Lingmo OS with Debian 12, as well as other features.
                 </Text>
