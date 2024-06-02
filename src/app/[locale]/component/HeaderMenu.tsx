@@ -2,10 +2,10 @@
 
 import { ActionIcon, Burger, Container, Group, rem } from '@mantine/core';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
+import { useTranslations } from 'next-intl';
 import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
-import {useTranslations} from "next-intl";
 
 const links = [
     { link: '/about', label: 'features' },

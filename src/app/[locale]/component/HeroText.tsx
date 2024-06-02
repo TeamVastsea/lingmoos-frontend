@@ -4,15 +4,15 @@ import { Button, Container, Group, Text } from '@mantine/core';
 import { IconDownload } from '@tabler/icons-react';
 import React from 'react';
 import { useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import classes from './HeroText.module.css';
 import { Dots } from '@/src/app/[locale]/component/Dots';
-import {useTranslations} from "next-intl";
 
 export function HeroText() {
     const router = useRouter();
-    const t = useTranslations("Index");
+    const t = useTranslations('Index');
 
-    const description = t("description").split("%");
+    const description = t('description').split('%');
 
     return (
         <div className={classes.wrapper}>
