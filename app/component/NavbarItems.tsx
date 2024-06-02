@@ -1,4 +1,4 @@
-import {Stack, Text} from "@mantine/core";
+import { Stack, Text } from '@mantine/core';
 
 const links = [
     { link: '/about', label: 'Features' },
@@ -16,7 +16,7 @@ export function NavbarItems() {
     ));
 
     return (
-        <Stack style={{marginLeft: 30, marginTop: 30}}>
+        <Stack style={{ marginLeft: 30, marginTop: 30 }}>
             {items}
         </Stack>
     );

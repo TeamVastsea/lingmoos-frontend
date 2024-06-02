@@ -1,8 +1,7 @@
 'use client';
 
-import {ActionIcon, Burger, Center, Container, Group, Menu, Modal, rem} from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import { IconBrandBilibili, IconBrandGithub, IconBrandQq, IconChevronDown } from '@tabler/icons-react';
+import { ActionIcon, Burger, Container, Group, rem } from '@mantine/core';
+import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
 import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/app/component/ColorSchemeToggle';
@@ -16,9 +15,7 @@ const links = [
 ];
 
 export function HeaderMenu(props: HeaderMenuProps) {
-
-    const items = links.map((link) => {
-        return (
+    const items = links.map((link) => (
             <a
               key={link.label}
               href={link.link}
@@ -26,8 +23,7 @@ export function HeaderMenu(props: HeaderMenuProps) {
             >
                 {link.label}
             </a>
-        );
-    });
+        ));
 
     return (
         <header className={classes.header}>

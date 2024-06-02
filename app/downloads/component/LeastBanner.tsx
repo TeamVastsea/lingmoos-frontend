@@ -1,19 +1,5 @@
-import {
-    Text,
-    Title,
-    TextInput,
-    Button,
-    Image,
-    List,
-    ThemeIcon,
-    rem,
-    Space,
-    SimpleGrid,
-    Grid,
-    Stack, Group,
-} from '@mantine/core';
-// import image from './image.svg';
-import { IconCircleCheck, IconCircleDashed } from '@tabler/icons-react';
+import { Button, Grid, List, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
+import { IconCircleCheck } from '@tabler/icons-react';
 import classes from './LeastBanner.module.css';
 
 export function LeastBanner() {

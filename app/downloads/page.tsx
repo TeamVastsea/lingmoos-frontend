@@ -1,6 +1,6 @@
 'use client';
 
-import { Card, Center, Container, Divider, Group, Space, Stack, Text, Title } from '@mantine/core';
+import { Container, Group, Space, Stack, Text, Title } from '@mantine/core';
 import { LeastBanner } from '@/app/downloads/component/LeastBanner';
 
 export default function DownloadsPage() {

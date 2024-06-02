@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
 import '@mantine/core/styles.css';
 import React from 'react';
-import {MantineProvider, ColorSchemeScript, Text, AppShell} from '@mantine/core';
+import { AppShell, ColorSchemeScript, MantineProvider } from '@mantine/core';
+import { useDisclosure } from '@mantine/hooks';
 import { theme } from '@/theme';
-import {HeaderMenu} from "@/app/component/HeaderMenu";
-import {Footer} from "@/app/component/Footer";
-import {useDisclosure} from "@mantine/hooks";
-import {NavbarItems} from "@/app/component/NavbarItems";
+import { HeaderMenu } from '@/app/component/HeaderMenu';
+import { Footer } from '@/app/component/Footer';
+import { NavbarItems } from '@/app/component/NavbarItems';
 
 export default function RootLayout({ children }: { children: any }) {
     const [opened, { toggle }] = useDisclosure();
@@ -24,7 +24,7 @@ export default function RootLayout({ children }: { children: any }) {
       </head>
       <body>
         <MantineProvider theme={theme}>
-            <AppShell header={{ height: 57 }} aside={{ width: 0, breakpoint: "sm", collapsed: { mobile: !opened } }}>
+            <AppShell header={{ height: 57 }} aside={{ width: 0, breakpoint: 'sm', collapsed: { mobile: !opened } }}>
                 <AppShell.Header>
                     <HeaderMenu opened={opened} toggle={toggle} />
                 </AppShell.Header>

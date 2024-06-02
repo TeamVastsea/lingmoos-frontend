@@ -1,7 +1,7 @@
-'use client'
+'use client';
 
-import {Badge, Card, Container, Group, rem, SimpleGrid, Text, Title, useMantineTheme,} from '@mantine/core';
-import {IconCategory2, IconKeyframes, IconLayersIntersect, IconShieldLock} from '@tabler/icons-react';
+import { Badge, Card, Container, Group, rem, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
+import { IconCategory2, IconKeyframes, IconLayersIntersect, IconShieldLock } from '@tabler/icons-react';
 import classes from './FeatureCards.module.css';
 
 const mockdata = [
@@ -36,9 +36,9 @@ export function FeaturesCards() {
     const features = mockdata.map((feature) => (
         <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
             <feature.icon
-                style={{ width: rem(50), height: rem(50) }}
-                stroke={2}
-                color={theme.colors.blue[6]}
+              style={{ width: rem(50), height: rem(50) }}
+              stroke={2}
+              color={theme.colors.blue[6]}
             />
             <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
                 {feature.title}
