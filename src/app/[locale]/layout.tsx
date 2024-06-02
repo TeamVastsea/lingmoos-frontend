@@ -3,7 +3,7 @@ import React from 'react';
 import { ColorSchemeScript, MantineProvider } from '@mantine/core';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import { Analytics } from '@vercel/analytics/dist/next';
+import { Analytics } from '@vercel/analytics/next';
 import { theme } from '@/theme';
 import RootLayoutInner from '@/src/app/[locale]/component/RootLayoutInner';
 
