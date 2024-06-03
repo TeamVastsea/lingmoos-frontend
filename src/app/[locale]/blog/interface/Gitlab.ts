@@ -20,12 +20,17 @@ export class BlogInfo {
     }
 
     fetchCover(): Promise<string> {
-        return GitlabClient.RepositoryFiles.showRaw(130, this.cover, 'main') as Promise<string>;
+        return GitlabClient.RepositoryFiles.showRaw(130, this.cover, 'main').then((e) => {
+            if (e instanceof Blob) {
+                return URL.createObjectURL(e);
+            }
+            return e;
+        }) as Promise<string>;
     }
 }
 
 export async function getGitlabFiles(): Promise<Array<BlogInfo>> {
-    const file = await GitlabClient.RepositoryFiles.showRaw(130, 'index.json', 'main');
+    const file = await GitlabClient.RepositoryFiles.showRaw(130, 'index.json', 'main').catch((e) => { throw e; });
     const res: BlogInfo[] = JSON.parse(file as string);
     return res.map((e) => new BlogInfo(e.filePath, e.label, e.cover, e.time));
 }
