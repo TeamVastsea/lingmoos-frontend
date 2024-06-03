@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Container, Group, LoadingOverlay, SimpleGrid, Space, Stack, Text, Title } from '@mantine/core';
+import { Button, Center, Container, Group, LoadingOverlay, SimpleGrid, Space, Stack, Text, Title } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { BlogInfo, getGitlabFiles } from '@/src/app/[locale]/blog/interface/Gitlab';
 import { BlogCard } from '@/src/app/[locale]/blog/component/BlogCard';
@@ -60,6 +60,11 @@ export default function BlogPage() {
                                 <BlogCard info={fileInner} key={`${pageIndex}-${index}`} index={pageIndex * 10 + index} />)
                         ))}
                     </SimpleGrid> : failedMessage}
+                <Center>
+                    {finished ? <></> : <Button onClick={fetchNextPage}>
+                        Fetch more
+                                        </Button>}
+                </Center>
             </Stack>
         </Container>
     );
