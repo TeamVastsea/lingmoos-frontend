@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Box, LoadingOverlay, Text, Title } from '@mantine/core';
+import {Box, Card, Container, LoadingOverlay, Text, Title, TypographyStylesProvider} from '@mantine/core';
 import { remark } from 'remark';
 import remarkHtml from 'remark-html';
 import { reporter } from 'next/dist/trace/report';
@@ -28,6 +28,7 @@ export default function PostContentPage({ params: { postIndex } }:
         getGitlabPost(postIndex).then((res) => {
             setFile(res);
             res!.fetchContent().then((resContent) => {
+                console.log(resContent);
                 // setContent(resContent);
                 renderMarkdown(resContent);
             });
@@ -37,10 +38,20 @@ export default function PostContentPage({ params: { postIndex } }:
     }, []);
 
     return (
-        <Box>
+        <Container maw={1200}>
             <LoadingOverlay visible={file === undefined || content === ''} overlayProps={{ radius: 'sm', blur: 2 }} />
             <Title>{file?.label}</Title>
-            <div dangerouslySetInnerHTML={{__html: content}} />
-        </Box>
+            <Card radius={'md'}>
+                <Card.Section>
+                    <Container maw={1000}>
+                        <TypographyStylesProvider>
+                            <div
+                                dangerouslySetInnerHTML={{ __html: content }}
+                            />
+                        </TypographyStylesProvider>
+                    </Container>
+                </Card.Section>
+            </Card>
+        </Container>
     );
 }
