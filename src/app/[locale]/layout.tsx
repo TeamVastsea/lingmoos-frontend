@@ -20,6 +20,7 @@ export default async function RootLayout({ children, params: { locale } }:
               name="viewport"
               content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
             />
+            <title>Lingmo OS</title>
         </head>
         <body>
         <NextIntlClientProvider messages={messages}>
