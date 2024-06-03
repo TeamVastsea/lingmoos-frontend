@@ -13,11 +13,11 @@ export default function RootLayoutInner({ children }: { children: any }) {
     return (
         <>
             <AppShell header={{ height: 57 }} aside={{ width: 0, breakpoint: 'sm', collapsed: { mobile: !opened } }}>
-                <AppShell.Header>
+                <AppShell.Header style={{zIndex: 1000}}>
                     <HeaderMenu opened={opened} toggle={toggle} />
                 </AppShell.Header>
 
-                <AppShell.Aside>
+                <AppShell.Aside style={{zIndex: 1000}}>
                     <NavbarItems />
                 </AppShell.Aside>
 
