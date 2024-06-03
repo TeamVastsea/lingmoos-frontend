@@ -19,6 +19,7 @@
     "storybook:build": "storybook build"
   },
   "dependencies": {
+    "@gitbeaker/rest": "^40.0.3",
     "@mantine/core": "7.10.0",
     "@mantine/hooks": "7.10.0",
     "@next/bundle-analyzer": "^14.1.3",
