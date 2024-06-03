@@ -6,11 +6,13 @@ export class BlogInfo {
     public filePath: string;
     public label: string;
     public cover: string;
+    public time: Date;
 
-    constructor(filePath: string, label: string, cover: string) {
+    constructor(filePath: string, label: string, cover: string, time: Date) {
         this.filePath = filePath;
         this.label = label;
         this.cover = cover;
+        this.time = time;
     }
 
     fetchContent(): Promise<string> {
@@ -25,5 +27,5 @@ export class BlogInfo {
 export async function getGitlabFiles(): Promise<Array<BlogInfo>> {
     const file = await GitlabClient.RepositoryFiles.showRaw(130, 'index.json', 'main');
     const res: BlogInfo[] = JSON.parse(file as string);
-    return res.map((e) => new BlogInfo(e.filePath, e.label, e.cover));
+    return res.map((e) => new BlogInfo(e.filePath, e.label, e.cover, e.time));
 }
