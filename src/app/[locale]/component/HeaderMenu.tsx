@@ -7,6 +7,7 @@ import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
+import {useRouter} from "next/navigation";
 
 const links = [
     { link: '/about', label: 'features' },
@@ -18,11 +19,13 @@ const links = [
 
 export function HeaderMenu(props: HeaderMenuProps) {
     const t = useTranslations('Headers');
+    const router = useRouter();
     const items = links.map((link) => (
             <a
               key={link.label}
-              href={link.link}
               className={classes.link}
+              onClick={() => {router.push(link.link)}}
+              style={{cursor: 'pointer' }}
             >
                 {t(link.label)}
             </a>

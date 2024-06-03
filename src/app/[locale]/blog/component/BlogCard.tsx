@@ -1,12 +1,14 @@
-import {Card, Group, Text, Image, LoadingOverlay, Center} from '@mantine/core';
-import {useEffect, useState} from 'react';
-import {useDisclosure} from '@mantine/hooks';
+import { Card, Group, Text, LoadingOverlay, Center } from '@mantine/core';
+import { useEffect, useState } from 'react';
+import { useDisclosure } from '@mantine/hooks';
+import { useRouter } from 'next/navigation';
 import classes from './BlogCard.module.css';
-import {BlogInfo} from '@/src/app/[locale]/blog/interface/Gitlab';
+import { BlogInfo } from '@/src/app/[locale]/blog/interface/Gitlab';
 
 export function BlogCard(props: BlogCardProps) {
     const [image, setImage] = useState('');
-    const [visible, {open, close}] = useDisclosure(true);
+    const [visible, { open, close }] = useDisclosure(true);
+    const router = useRouter();
 
     useEffect(() => {
         open();
@@ -19,23 +21,24 @@ export function BlogCard(props: BlogCardProps) {
     return (
         <Center>
             <Card
-                p="lg"
-                shadow="lg"
-                className={classes.card}
-                radius="md"
-                component="a"
-                href="https://mantine.dev/"
-                target="_blank"
-                w={400}
+              p="lg"
+              shadow="lg"
+              className={classes.card}
+              radius="md"
+              component="a"
+              target="_blank"
+              onClick={() => { router.push(`/blog/${props.index}`); }}
+              style={{ cursor: 'pointer' }}
+              w={400}
             >
-                <LoadingOverlay visible={visible} zIndex={1000} overlayProps={{radius: 'md', blur: 2}}/>
+                <LoadingOverlay visible={visible} overlayProps={{ radius: 'md', blur: 2 }} />
                 <div
-                    className={classes.image}
-                    style={{
+                  className={classes.image}
+                  style={{
                         backgroundImage: `url(${image})`,
                     }}
                 />
-                <div className={classes.overlay}/>
+                <div className={classes.overlay} />
 
                 <div className={classes.content}>
                     <div>

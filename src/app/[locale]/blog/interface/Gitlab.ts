@@ -29,8 +29,17 @@ export class BlogInfo {
     }
 }
 
-export async function getGitlabFiles(): Promise<Array<BlogInfo>> {
-    const file = await GitlabClient.RepositoryFiles.showRaw(130, 'index.json', 'main').catch((e) => { throw e; });
+export async function getGitlabFiles(page: number): Promise<Array<BlogInfo>> {
+    const file = await GitlabClient.RepositoryFiles.showRaw(130, `index-${page}.json`, 'main').catch((e) => { throw e; });
     const res: BlogInfo[] = JSON.parse(file as string);
     return res.map((e) => new BlogInfo(e.filePath, e.label, e.cover, e.time));
+}
+
+export async function getGitlabPost(index: number): Promise<BlogInfo> {
+    const page = index / 10;
+    const postIndex = index % 10;
+
+    const list = await getGitlabFiles(page);
+
+    return list.at(postIndex)!;
 }

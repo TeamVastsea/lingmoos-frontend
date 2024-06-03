@@ -5,6 +5,7 @@ import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-r
 import { useTranslations } from 'next-intl';
 import classes from './Footer.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
+import {useRouter} from "next/navigation";
 
 const links = [
     { link: '/', label: 'home' },
@@ -15,13 +16,14 @@ const links = [
 
 export function Footer() {
     const t = useTranslations('Headers');
+    const router = useRouter();
     const items = links.map((link) => (
         <Anchor
           c="dimmed"
           key={link.label}
-          href={link.link}
           lh={1}
           size="sm"
+          onClick={() => {router.push(link.link)}}
         >
             {t(link.label)}
         </Anchor>
