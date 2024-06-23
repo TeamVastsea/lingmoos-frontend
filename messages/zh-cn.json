@@ -1,11 +1,11 @@
 {
   "Index": {
     "title": "一个基于 Debian GNU/Linux 的操作系统",
-    "description": "我们为系统创建了一个高效而美观的 UI 设计，象征着 %灵活、流畅的墨水% 。",
-    "getStarted": "下载镜像",
+    "description": "象征着 %灵活、流畅的墨水%，我们为系统创建了一个高效而美观的 UI 设计 。",
+    "getStarted": "开始使用",
     "badge": "有史以来最好的 Linux 发行版",
     "badgeTitle": "轻松完成任何任务",
-    "badgeDescription": "Lingmo OS 拥有用户友好的界面，以及多种量身定制的功能",
+    "badgeDescription": "Lingmo OS 拥有用户友好的界面，以及多种为你量身定制的功能",
     "featureInteractions": "更好的交互",
     "featureInteractionsDescription": "Lingmo OS对整个系统进行了重新设计，优化了视觉效果，提升了用户体验",
     "featureSecurity": "安全和稳定",
@@ -16,7 +16,7 @@
     "featureMenuDescription": "Lingmo OS 采用顶部全局菜单设计，在提供众多功能的同时节省屏幕空间"
   },
   "Headers": {
-    "features": "特性",
+    "features": "功能",
     "downloads": "下载",
     "blog": "博客",
     "community": "社区",
@@ -27,9 +27,9 @@
     "title": "下载 Lingmo OS",
     "titleDescription": "使用 Lingmo OS，享受开箱即用的高效流畅体验",
     "latestTitle": "下载最新版 Lingmo OS",
-    "latestDescription": "全新的 Lingmo OS 2.0 版本基于 Debian，并且还有其他特性",
-    "requirements": "系统配置需求",
-    "requirementsMemory": "2 GB 内存",
+    "latestDescription": "全新的 Lingmo OS 2.0 版本基于 Debian，还有其他功能",
+    "requirements": "系统需求",
+    "requirementsMemory": "至少 2 GB 内存",
     "requirementsCPU": "2 GHz x86_64处理器或更高",
     "requirementsStorage": "20 GB 及以上磁盘空间",
     "requirementsMedia": "4 GB 以上的U盘或DVD用于安装介质",
@@ -38,6 +38,6 @@
     "size": "大小：",
     "download": "下载",
     "allDownloads": "所有下载",
-    "allDownloadsDescription": "Lingmo OS 镜像已共享至 Sourceforge。点击 %这里% 获取更多信息。"
+    "allDownloadsDescription": "目前，Lingmo OS 镜像已共享至 Sourceforge。点击 %这里% 获取更多信息。"
   }
 }
