@@ -41,19 +41,25 @@ export function HeaderMenu(props: HeaderMenuProps) {
                     </Group>
 
                     <Group gap={10} visibleFrom="sm" justify="flex-end">
-                        <ActionIcon size="lg" variant="default" radius="xl">
-                            <IconBrandBilibili style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-                        </ActionIcon>
-                        <ActionIcon size="lg" variant="default" radius="xl">
-                            <IconBrandGithub style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-                        </ActionIcon>
-                        <ActionIcon size="lg" variant="default" radius="xl">
-                            <IconBrandQq style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-                        </ActionIcon>
+                        <a href="https://space.bilibili.com/595380133/" target="_blank" rel="noreferrer">
+                            <ActionIcon size="lg" variant="default" radius="xl">
+                                <IconBrandBilibili style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+                            </ActionIcon>
+                        </a>
+                        <a href="https://github.com/LingmoOS" target="_blank" rel="noreferrer">
+                            <ActionIcon size="lg" variant="default" radius="xl">
+                                <IconBrandGithub style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+                            </ActionIcon>
+                        </a>
+                        <a href="https://qm.qq.com/q/l8QeupIEjS" target="_blank" rel="noreferrer">
+                            <ActionIcon size="lg" variant="default" radius="xl">
+                                <IconBrandQq style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
+                            </ActionIcon>
+                        </a>
                         <ColorSchemeToggle />
                         <LocaleToggle />
                     </Group>
-                    <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm" />
+                    <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm"/>
                 </div>
             </Container>
         </header>
