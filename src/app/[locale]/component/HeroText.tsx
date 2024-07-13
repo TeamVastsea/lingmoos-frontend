@@ -51,13 +51,13 @@ export function HeroText() {
 
                     <Button
                       component="a"
-                      href="https://git.lingmo.org/lingmo-os-team"
+                      href="https://github.com/LingmoOS"
                       size="xl"
                       variant="default"
                       className={classes.control}
                       target="_blank"
                     >
-                        GitLab
+                        GitHub
                     </Button>
                 </Group>
             </Container>
