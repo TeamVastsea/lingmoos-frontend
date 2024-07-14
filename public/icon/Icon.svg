@@ -1,7 +1,40 @@
-<svg width="242.791504" height="181.236572" viewBox="0 0 242.792 181.237" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<desc>
-			Created with Pixso.
-	</desc>
-	<defs/>
-	<path id="矢量 1" d="M86.91 0C38.91 0 0 40.57 0 90.61C0 140.66 38.91 181.23 86.91 181.23C87.08 181.23 87.25 181.23 87.42 181.23C87.77 181.23 88.11 181.23 88.45 181.23C111.67 180.81 124.18 181.23 148.05 155.02L179.3 120.54L214.51 159.41L242.58 130.57L206.39 90.63L242.79 50.47L214.72 21.63L179.3 60.73L151.01 28.57C126.48 3.26 112.1 0 86.91 0ZM152.2 90.63L179.3 60.73L206.39 90.63L179.3 120.54L152.2 90.63ZM152.2 90.63C124.95 130.57 112.68 142.04 86.91 142.04C61.14 142.04 39.64 118.11 39.64 90.61C39.64 63.11 61.91 40.81 86.91 40.81C111.92 40.81 126.48 50.47 152.2 90.63Z" fill="#0061FE" fill-opacity="1.000000" fill-rule="evenodd"/>
+<svg width="218.000000" height="218.000000" viewBox="0 0 218 218" fill="none" xmlns="http://www.w3.org/2000/svg"
+>
+    <defs>
+        <filter id="filter_127_3_dd" x="34.674805" y="48.201294" width="158.627441" height="131.436890"
+                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                           result="hardAlpha"/>
+            <feOffset dx="0" dy="4"/>
+            <feGaussianBlur stdDeviation="1.33333"/>
+            <feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                           result="hardAlpha"/>
+            <feOffset dx="3" dy="6"/>
+            <feGaussianBlur stdDeviation="2.66667"/>
+            <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+            <feColorMatrix type="matrix" values="0 0 0 0 0.32941 0 0 0 0 0.32941 0 0 0 0 0.32941 0 0 0 0.11 0"/>
+            <feBlend mode="normal" in2="shape" result="effect_innerShadow_2"/>
+        </filter>
+        <clipPath id="clip127_6">
+            <rect id="paint board" width="218.000000" height="218.000000" fill="white" fill-opacity="0"/>
+        </clipPath>
+        <linearGradient x1="83.999290" y1="84.500046" x2="375.499298" y2="261.999878" id="paint_linear_127_3_0"
+                        gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FFFFFF"/>
+            <stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+        </linearGradient>
+    </defs>
+    <g clip-path="url(#clip127_6)">
+        <circle id="ellipse" cx="109.000000" cy="109.000000" r="109.000000" fill="#2779FF" fill-opacity="1.000000"/>
+        <g filter="url(#filter_127_3_dd)">
+            <path id="difference set"
+                  d="M43.9316 76.5477C56.3506 51.3765 86.8237 41.0389 111.995 53.4583C124.581 59.6678 133.458 70.3909 137.636 82.708C139.532 88.1782 141.006 98.3505 142.376 109.965C137.734 112.838 133.126 115.702 128.739 118.391C127.231 103.979 125.688 91.8062 123.704 87.4341C120.735 78.6825 114.428 71.0635 105.485 66.6514C87.6006 57.8273 65.9487 65.1722 57.1245 83.0571C48.3003 100.942 55.6455 122.594 73.5303 131.418C82.4727 135.83 92.3569 136.2 101.108 133.231C105.785 132.145 116.384 125.964 128.739 118.391C129.275 123.508 129.806 128.907 130.35 134.34C120.299 140.32 111.329 145.339 105.834 147.163C93.5176 151.341 79.6064 150.821 67.021 144.611C41.8496 132.192 31.5122 101.719 43.9316 76.5477ZM130.35 134.34C134.812 131.685 139.488 128.841 144.167 126.003C144.404 128.172 144.642 130.34 144.883 132.491C146.158 143.871 159.343 156.234 165.04 159.045L158.827 171.638C148.632 166.608 134.594 153.344 130.357 134.418C130.355 134.392 130.352 134.366 130.35 134.34ZM144.167 126.003C143.572 120.563 142.984 115.122 142.376 109.965C142.398 109.951 142.42 109.938 142.442 109.924C160.04 101.77 179.107 104.84 189.302 109.87L183.089 122.463C177.392 119.652 159.559 116.711 149.751 122.623C147.898 123.74 146.032 124.871 144.167 126.003Z"
+                  clip-rule="evenodd" fill="url(#paint_linear_127_3_0)" fill-opacity="1.000000" fill-rule="evenodd"/>
+        </g>
+    </g>
 </svg>
