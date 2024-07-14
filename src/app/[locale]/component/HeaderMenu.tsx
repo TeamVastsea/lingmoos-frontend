@@ -59,7 +59,7 @@ export function HeaderMenu(props: HeaderMenuProps) {
                         <ColorSchemeToggle />
                         <LocaleToggle />
                     </Group>
-                    <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm"/>
+                    <Burger opened={props.opened} onClick={props.toggle} size="sm" hiddenFrom="sm" />
                 </div>
             </Container>
         </header>
