@@ -32,8 +32,8 @@ export function HeaderMenu(props: HeaderMenuProps) {
         <header className={classes.header}>
             <Container size="md">
                 <div className={classes.inner}>
-                    <a href="/">
-                        <LingmoLogos.TitleWIthIcon width={200} height={24} />
+                    <a style={{ top: '50%', transform: 'translate(0, 10%)' }} href="/">
+                        <LingmoLogos.TitleWIthIcon width={200} height={30} />
                     </a>
 
                     <Group gap={5} visibleFrom="sm">
