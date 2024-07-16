@@ -2,6 +2,10 @@
     position: relative;
     box-sizing: border-box;
     background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
+    height: calc(100vh - 58px); /* 占据视口高度 */
+    display: flex; /* 使用 Flexbox */
+    align-items: center; /* 垂直居中 */
+    justify-content: center; /* 水平居中 */
 }
 
 .inner {
@@ -21,7 +25,8 @@
             var(--mantine-font-family);
     font-size: rem(62px);
     font-weight: 900;
-    line-height: 1.1;
+    height: 100%;
+    position: -ms-device-fixed;
     margin: 0;
     padding: 0;
     color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
