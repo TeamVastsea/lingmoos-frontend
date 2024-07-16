@@ -1,4 +1,4 @@
-import { Button, Grid, List, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
+import { Button, Grid, List, Menu, rem, Space, Stack, Text, ThemeIcon, Title } from '@mantine/core';
 import { IconCircleCheck } from '@tabler/icons-react';
 import { useTranslations } from 'next-intl';
 import classes from './LatestBanner.module.css';
@@ -44,10 +44,22 @@ export function LatestBanner() {
                                 {t('date')}2024-04-15<br />
                                 {t('size')}3.7 GB
                             </Text>
-                            <Button component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">{t('download')}</Button>
-                            <Text size="xs">
-                                (Sourceforge)
-                            </Text>
+                            <Menu>
+                                <Menu.Target>
+                                    <Button>{t('download')}</Button>
+                                </Menu.Target>
+                                <Menu.Dropdown>
+                                    <Menu.Item component="a" href="" target="_blank">
+                                        官方下载源
+                                    </Menu.Item>
+                                    <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">
+                                        SourceForge
+                                    </Menu.Item>
+                                    <Menu.Item component="a" href="" target="_blank">
+                                        GitHub Release
+                                    </Menu.Item>
+                                </Menu.Dropdown>
+                            </Menu>
                         </Stack>
                     </Grid.Col>
                 </Grid>
