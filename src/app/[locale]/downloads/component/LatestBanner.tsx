@@ -50,7 +50,7 @@ export function LatestBanner() {
                                 </Menu.Target>
                                 <Menu.Dropdown>
                                     <Menu.Item component="a" href="" target="_blank">
-                                        {t('downloadOffical')}
+                                        {t('downloadOfficial')}
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">
                                         SourceForge
