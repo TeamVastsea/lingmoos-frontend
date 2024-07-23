@@ -37,6 +37,7 @@
     "date": "Date: ",
     "size": "Size: ",
     "download": "Download",
+    "downloadOffical": "Offical Download Source",
     "allDownloads": "All Downloads",
     "allDownloadsDescription": "Currently, the iso is shared on the Sourceforge. Click %here% to get more info."
   }
