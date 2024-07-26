@@ -27,6 +27,8 @@ export function Footer() {
         </Anchor>
     ));
 
+    const year = new Date().getFullYear();
+
     return (
         <div className={classes.footer}>
             <div className={classes.inner}>
@@ -51,6 +53,27 @@ export function Footer() {
                         </ActionIcon>
                     </a>
                 </Group>
+            </div>
+            <div style={{
+                textAlign: 'center',
+                // padding: '20px 0',
+                // borderTop: '1px solid #eaeaea',
+                // color: '#666',
+
+            }}>
+                © 2022-{year} Lingmo OS {t('right')}
+                <br />
+                <a
+                  href="https://beian.miit.gov.cn/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                        color: '#666',
+                        textDecoration: 'none',
+                  }}
+                >
+                    陇ICP备2024012028号
+                </a>
             </div>
         </div>
     );
