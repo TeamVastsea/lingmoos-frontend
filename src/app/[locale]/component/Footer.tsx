@@ -6,35 +6,17 @@ import { useTranslations } from 'next-intl';
 import classes from './Footer.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 
-const links = [
-    { link: '/', label: 'home' },
-    { link: '/downloads', label: 'downloads' },
-    { link: '/blog', label: 'blog' },
-    { link: 'https://bbs.lingmo.org', label: 'community' },
-];
 
 export function Footer() {
     const t = useTranslations('Headers');
-    const items = links.map((link) => (
-        <Anchor
-          c="dimmed"
-          key={link.label}
-          href={link.link}
-          lh={1}
-          size="sm"
-        >
-            {t(link.label)}
-        </Anchor>
-    ));
 
     const year = new Date().getFullYear();
 
     return (
         <div className={classes.footer}>
             <div className={classes.inner}>
-                <LingmoLogos.TitleWIthIcon width={200} height={24} />
+                <LingmoLogos.TitleWIthIcon width={150} height={24} />
 
-                <Group className={classes.links}>{items}</Group>
 
                 <Group gap="xs" justify="flex-end" wrap="nowrap">
                     <a href="https://space.bilibili.com/595380133/" target="_blank" rel="noreferrer">
@@ -56,12 +38,14 @@ export function Footer() {
             </div>
             <div style={{
                 textAlign: 'center',
+                fontSize: '12px',
+                padding: '0px 20px 20px 20px'
                 // padding: '20px 0',
                 // borderTop: '1px solid #eaeaea',
                 // color: '#666',
 
             }}>
-                © 2022-{year} Lingmo OS {t('right')}
+                © 2023-{year} Lingmo OS {t('right')}
                 <br />
                 <a
                   href="https://beian.miit.gov.cn/"

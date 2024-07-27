@@ -5,14 +5,25 @@
 
 .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: var(--mantine-spacing-md) var(--mantine-spacing-md);
 
     @media (max-width: $mantine-breakpoint-sm) {
-        flex-direction: column;
+        /* flex-direction: column; */
+        img {
+            width: 130px;
+            /* margin-bottom: 10px; */
+        }
+    }
+    @media (max-width: 300px) {
+        img {
+            display: none;
+        }
     }
 }
+
+
 
 .links {
     @media (max-width: $mantine-breakpoint-sm) {
