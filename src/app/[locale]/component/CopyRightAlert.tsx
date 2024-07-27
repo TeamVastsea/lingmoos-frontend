@@ -11,7 +11,7 @@ export default function CopyRightAlert() {
             marginTop: '30px',
             height: 'auto',
         }}>
-            <Alert variant="filled" color="red" radius="lg" title="版权声明" icon={<IconInfoCircle/>}>
+            <Alert variant="filled" color="#35a2f3" radius="lg" title="版权声明" icon={<IconInfoCircle/>}>
                 本项目由
                 <a style={{color: 'yellow'}} href="https://github.com/LingmoOS" target="_blank" rel="noreferrer">
                     Lingmo OS
