@@ -11,7 +11,7 @@ import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
 const links = [
     { link: '/about', label: 'features' },
     { link: '/downloads', label: 'downloads' },
-    { link: '/blog', label: 'blog' },
+    { link: 'https://lingmoos.github.io/lingmo-blog', label: 'blog' },
     { link: 'https://bbs.lingmo.org', label: 'community' },
     { link: '/help', label: 'help' },
 ];
