@@ -12,8 +12,8 @@ const links = [
     { link: '/about', label: 'features' },
     { link: '/downloads', label: 'downloads' },
     { link: 'https://lingmoos.github.io/lingmo-blog', label: 'blog' },
-    { link: 'https://bbs.lingmo.org', label: 'community' },
-    { link: '/help', label: 'help' },
+    { link: 'https://github.com/orgs/LingmoOS/discussions/', label: 'community' },
+    { link: 'https://wiki.lingmo.org/', label: 'help' },
 ];
 
 export function HeaderMenu(props: HeaderMenuProps) {
