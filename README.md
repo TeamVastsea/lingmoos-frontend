@@ -1,22 +1,32 @@
 # LingmoOS Website
 
-## 技术栈
-
+## Tech Stack
 - [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Storybook](https://storybook.js.org/)
 - [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
 
-### 静态页面:
+## Run locally
+```shell
+yarn install
+yarn dev
+```
 
-- [x] 首页
-- [x] 下载页
-- [ ] 特性页
-- [ ] 公告页
-- [x] 语言随浏览器语言自动切换(en & cn)
+## TODOs
 
+### Static Pages
+- [x] Home
+- [x] Download
+- [ ] Features
+- [ ] Announcements
+- [x] Language automatically switches based on browser language (en_US & zh_CN)
 
-### 动态页面:
+### Dynamic Pages
+- [ ] Ability to publish articles, announcements, news and pages from the backend
 
-- [ ] 可以后台发布文章, 公告, 新闻, 可以后台添加页面
+## License
+This repository is licensed under [MIT License](https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper/blob/main/LICENSE).
+
+> [!IMPORTANT]
+> The LingmoOS logo (including `public/icon` folder) are not covered under the MIT License. All rights to the logo are reserved by the LingmoOS Team. Unauthorized use, reproduction, or distribution of the logo and branding is strictly prohibited without explicit permission.
