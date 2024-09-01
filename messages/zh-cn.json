@@ -42,5 +42,11 @@
     "downloadGithub": "GitHub Release (目前不可用)",
     "allDownloads": "所有下载",
     "allDownloadsDescription": "目前，Lingmo OS 镜像已共享至 Sourceforge。点击 %这里% 获取更多信息。"
+  },
+  "Copyright": {
+    "title": "版权声明",
+    "part1": "本项目由",
+    "part2": "团队独立开发，从未授权至任何个人或集体，请注意甄别互联网信息真伪。",
+    "part3": "如若发现侵权行为，请及时与我们联系"
   }
 }
