@@ -29,4 +29,4 @@ yarn dev
 This repository is licensed under [MIT License](https://github.com/This-is-XiaoDeng/nonebot-plugin-maimai-qrhelper/blob/main/LICENSE).
 
 > [!IMPORTANT]
-> The LingmoOS logo (including `public/icon` folder) are not covered under the MIT License. All rights to the logo are reserved by the LingmoOS Team. Unauthorized use, reproduction, or distribution of the logo and branding is strictly prohibited without explicit permission.
+> The LingmoOS logo (including `public/icon` folder) and any associated branding are not covered under the MIT License. All rights to the logo and branding are reserved by the LingmoOS Team. Unauthorized use, reproduction, or distribution of the logo and branding is strictly prohibited without explicit permission.
