@@ -39,6 +39,7 @@
     "size": "Size: ",
     "download": "Download",
     "downloadOfficial": "Official Download Source",
+    "downloadGithub": "GitHub Release (currently unavailable)",
     "allDownloads": "All Downloads",
     "allDownloadsDescription": "Currently, the iso is shared on the Sourceforge. Click %here% to get more info."
   }

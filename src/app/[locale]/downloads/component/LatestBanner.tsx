@@ -49,14 +49,14 @@ export function LatestBanner() {
                                     <Button>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
-                                    <Menu.Item component="a" href="" target="_blank">
-                                        {t('downloadOfficial')}
+                                    <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">
+                                        {t('downloadOfficial')} (SourceForge)
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/latest/download" target="_blank">
                                         SourceForge
                                     </Menu.Item>
                                     <Menu.Item component="a" href="" target="_blank">
-                                        GitHub Release
+                                        {t('downloadGithub')}
                                     </Menu.Item>
                                 </Menu.Dropdown>
                             </Menu>
