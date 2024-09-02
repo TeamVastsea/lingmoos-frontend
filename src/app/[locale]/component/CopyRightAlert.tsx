@@ -24,9 +24,9 @@ export default function CopyRightAlert() {
                    target="_blank" rel="noreferrer">
                     2422586862
                 </a>&nbsp;Email:&nbsp;
-                <a style={{color: 'yellow'}} href="mailto:lingmo@lingmo.org"
+                <a style={{color: 'yellow'}} href="mailto:team@lingmo.org"
                    target="_blank" rel="noreferrer">
-                    lingmo@lingmo.org
+                    team@lingmo.org
                 </a>
                 )
             </Alert>
