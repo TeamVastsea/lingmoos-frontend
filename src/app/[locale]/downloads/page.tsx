@@ -26,19 +26,6 @@ export default function DownloadsPage() {
 
                     <Space h={20} />
                     <LatestBanner />
-                    <Space h={10} />
-
-                    <Group>
-                        <Space w={20} />
-                        <Stack>
-                            <Text size="lg" fw={700}>{t('allDownloads')}</Text>
-                            <Text>
-                                {allDownloads[0]}
-                                <a href="https://sourceforge.net/projects/lingmo-os/files/release/iso/" target="_blank" rel="noreferrer">{allDownloads[1]}</a>
-                                {allDownloads[2]}
-                            </Text>
-                        </Stack>
-                    </Group>
                 </Stack>
             </Container>
         </>
