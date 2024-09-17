@@ -3,14 +3,7 @@ import { useTranslations } from 'next-intl';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
-
-const links = [
-    { link: '/about', label: 'features' },
-    { link: '/downloads', label: 'downloads' },
-    { link: '/blog', label: 'blog' },
-    { link: 'https://bbs.lingmo.org', label: 'community' },
-    { link: '/help', label: 'help' },
-];
+import { links } from '@/src/app/[locale]/component/Links'
 
 export function NavbarItems() {
     const t = useTranslations('Headers');

@@ -20,9 +20,9 @@
     "downloads": "Download",
     "blog": "Blog",
     "community": "Community",
-    "help": "Help",
+    "wiki": "Wiki",
     "home": "Home",
-    "right": "Reserved All Rights"
+    "right": "All Rights Reserved"
   },
   "Downloads": {
     "title": "Download Lingmo OS",
@@ -39,7 +39,14 @@
     "size": "Size: ",
     "download": "Download",
     "downloadOfficial": "Official Download Source",
+    "downloadGithub": "GitHub Release (currently unavailable)",
     "allDownloads": "All Downloads",
     "allDownloadsDescription": "Currently, the iso is shared on the Sourceforge. Click %here% to get more info."
+  },
+  "Copyright": {
+    "title": "Copyright Notice",
+    "part1": "This project is independently developed by the",
+    "part2": "team and has never been authorized to any individual or organization. Please be cautious of internet information and beware of counterfeits.",
+    "part3": "If you discover any infringement, please contact us"
   }
 }

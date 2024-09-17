@@ -7,14 +7,7 @@ import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
-
-const links = [
-    { link: '/about', label: 'features' },
-    { link: '/downloads', label: 'downloads' },
-    { link: 'https://lingmoos.github.io/lingmo-blog', label: 'blog' },
-    { link: 'https://github.com/orgs/LingmoOS/discussions/', label: 'community' },
-    { link: 'https://wiki.lingmo.org/', label: 'help' },
-];
+import { links } from '@/src/app/[locale]/component/Links'
 
 export function HeaderMenu(props: HeaderMenuProps) {
     const t = useTranslations('Headers');
