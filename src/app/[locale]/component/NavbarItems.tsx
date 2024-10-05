@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 import { IconBrandBilibili, IconBrandGithub, IconBrandQq } from '@tabler/icons-react';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
-import { links } from '@/src/app/[locale]/component/Links'
+import { links } from '@/src/app/[locale]/component/Links';
 
 export function NavbarItems() {
     const t = useTranslations('Headers');
