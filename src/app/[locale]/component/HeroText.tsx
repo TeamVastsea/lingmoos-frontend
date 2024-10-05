@@ -1,7 +1,7 @@
 'use client';
 
-import {Alert, Button, Container, Group, Text} from '@mantine/core';
-import {IconDownload, IconInfoCircle} from '@tabler/icons-react';
+import { Button, Container, Group, Text } from '@mantine/core';
+import { IconDownload } from '@tabler/icons-react';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';

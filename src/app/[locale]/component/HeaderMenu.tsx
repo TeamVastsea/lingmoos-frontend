@@ -7,7 +7,7 @@ import classes from './HeaderMenu.module.css';
 import LingmoLogos from '@/components/LingmoLogos/LingmoLogos';
 import { ColorSchemeToggle } from '@/src/app/[locale]/component/ColorSchemeToggle';
 import { LocaleToggle } from '@/src/app/[locale]/component/LocaleToggle';
-import { links } from '@/src/app/[locale]/component/Links'
+import { links } from '@/src/app/[locale]/component/Links';
 
 export function HeaderMenu(props: HeaderMenuProps) {
     const t = useTranslations('Headers');
