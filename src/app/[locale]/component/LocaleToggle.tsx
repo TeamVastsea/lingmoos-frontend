@@ -6,6 +6,7 @@ import { IconLanguage } from '@tabler/icons-react';
 import { useParams } from 'next/navigation';
 import { createSharedPathnamesNavigation } from 'next-intl/navigation';
 import { LocalesList } from '@/src/locales';
+import classes from "./HeaderMenu.module.css";
 
 export function LocaleToggle() {
     const { setColorScheme } = useMantineColorScheme();
@@ -23,7 +24,14 @@ export function LocaleToggle() {
     return (
         <Menu>
             <Menu.Target>
-                <ActionIcon size="lg" variant="default" radius="xl"><IconLanguage size={20} /></ActionIcon>
+                <ActionIcon
+                    size="lg"
+                    variant="default"
+                    radius="xl"
+                    className={classes.action} 
+                >
+                    <IconLanguage size={20}/>
+                </ActionIcon>
             </Menu.Target>
 
             <Menu.Dropdown>
