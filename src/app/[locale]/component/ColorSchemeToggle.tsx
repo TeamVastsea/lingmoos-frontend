@@ -3,6 +3,7 @@
 import { ActionIcon, MantineColorScheme, useMantineColorScheme } from '@mantine/core';
 import { IconBrightness2, IconBrightnessAuto, IconMoonStars } from '@tabler/icons-react';
 import { useEffect, useState } from 'react';
+import classes from "./HeaderMenu.module.css";
 
 const schemes = [
     { scheme: 'auto', icon: <IconBrightnessAuto /> },
@@ -24,6 +25,14 @@ export function ColorSchemeToggle() {
     useEffect(() => { setColorScheme('auto'); }, []);
 
     return (
-        <ActionIcon onClick={selectNextColorScheme} size="lg" variant="default" radius="xl">{schemes[selected].icon}</ActionIcon>
+        <ActionIcon
+            onClick={selectNextColorScheme}
+            size="lg"
+            variant="default"
+            radius="xl"
+            className={classes.action}
+        >
+            {schemes[selected].icon}
+        </ActionIcon>
     );
 }

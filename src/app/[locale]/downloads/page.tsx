@@ -3,6 +3,7 @@
 import { Container, Group, Space, Stack, Text, Title } from '@mantine/core';
 import { useTranslations } from 'next-intl';
 import { LatestBanner } from '@/src/app/[locale]/downloads/component/LatestBanner';
+import React from 'react';
 
 export default function DownloadsPage() {
     const t = useTranslations('Downloads');

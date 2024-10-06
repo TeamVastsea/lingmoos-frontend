@@ -24,3 +24,15 @@
     line-height: 1;
     margin-bottom: var(--mantine-spacing-md);
 }
+
+.download_button, .download_item {
+    transition: .3s;
+}
+
+.grid{
+    flex-wrap: wrap;
+}
+
+.download_container {
+    min-width: fit-content;
+}
