@@ -40,16 +40,16 @@ export function LatestBanner() {
                     <Grid.Col span={3}>
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
-                                {t('version')}2.0<br />
-                                {t('date')}2024-09-26<br />
-                                {t('size')}3.58 GB
+                                {t('version')}2.1<br />
+                                {t('date')}2025-01-05<br />
+                                {t('size')}2.29 GB
                             </Text>
                             <Menu>
                                 <Menu.Target>
                                     <Button>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
-                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.0/" target="_blank">
+                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
                                         {t('downloadOfficial')}
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/hydrogen/stable/" target="_blank">
