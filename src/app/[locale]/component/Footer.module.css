@@ -24,11 +24,13 @@
     }
 }
 
-
-
 .links {
     @media (max-width: 768px) {
         margin-top: var(--mantine-spacing-lg);
         margin-bottom: var(--mantine-spacing-sm);
     }
+}
+
+.social {
+    transition: .3s;
 }

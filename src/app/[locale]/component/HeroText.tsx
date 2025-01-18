@@ -3,14 +3,14 @@
 import { Button, Container, Group, Text } from '@mantine/core';
 import { IconDownload } from '@tabler/icons-react';
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import classes from './HeroText.module.css';
 import { Dots } from '@/src/app/[locale]/component/Dots';
+import { useRouter } from "nextjs-toploader/app";
 
 export function HeroText() {
-    const router = useRouter();
     const t = useTranslations('Index');
+    const router=useRouter();
 
     const description = t('description').split('%');
 
@@ -39,23 +39,23 @@ export function HeroText() {
 
                 <Group className={classes.controls}>
                     <Button
-                      size="xl"
-                      className={classes.control}
-                      variant="gradient"
-                      gradient={{ from: 'indigo', to: 'grape' }}
-                      leftSection={<IconDownload />}
-                      onClick={() => router.push('/downloads')}
+                        size="xl"
+                        className={classes.control}
+                        variant="gradient"
+                        gradient={{ from: 'indigo', to: 'grape' }}
+                        leftSection={<IconDownload />}
+                        onClick={()=>router.push("/downloads")}
                     >
                         {t('getStarted')}
                     </Button>
 
                     <Button
-                      component="a"
-                      href="https://github.com/LingmoOS"
-                      size="xl"
-                      variant="default"
-                      className={classes.control}
-                      target="_blank"
+                        component="a"
+                        href="https://github.com/LingmoOS"
+                        size="xl"
+                        variant="default"
+                        className={classes.control}
+                        target="_blank"
                     >
                         GitHub
                     </Button>
