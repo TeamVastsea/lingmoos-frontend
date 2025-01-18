@@ -2,7 +2,6 @@
 
 import { Container, Group, Space, Stack, Text, Title } from '@mantine/core';
 import { useTranslations } from 'next-intl';
-import React from 'react';
 import { LatestBanner } from '@/src/app/[locale]/downloads/component/LatestBanner';
 import React from 'react';
 
