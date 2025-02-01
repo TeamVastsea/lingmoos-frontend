@@ -53,7 +53,7 @@ export function LatestBanner() {
                                         {t('downloadOfficial')}
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
-                                        SourceForge
+                                        {t('downloadSourceForge')}
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
                                         {t('downloadOldversion')}
