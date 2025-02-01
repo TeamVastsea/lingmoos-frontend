@@ -7,10 +7,10 @@
 - [Jest](https://jestjs.io/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
 - ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
 
-## Run locally
+## Running locally
 ```shell
-yarn install
-yarn dev
+npm install
+npm run dev
 ```
 
 ## TODOs
