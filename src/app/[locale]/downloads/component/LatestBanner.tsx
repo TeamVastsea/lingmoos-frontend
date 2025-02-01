@@ -56,7 +56,7 @@ export function LatestBanner() {
                                         SourceForge
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
-                                        Version 2.1 (Old version)
+                                        {t('downloadOldversion')}
                                     </Menu.Item>
                                 </Menu.Dropdown>
                             </Menu>
