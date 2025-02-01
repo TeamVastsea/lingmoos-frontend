@@ -42,7 +42,7 @@ export function LatestBanner() {
                             <Text size="xs">
                                 {t('version')}3.0-rc8<br />
                                 {t('date')}2025-02-01<br />
-                                {t('size')}2.40 GB
+                                {t('size')}2.37 GB
                             </Text>
                             <Menu>
                                 <Menu.Target>
