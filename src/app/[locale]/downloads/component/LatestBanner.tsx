@@ -40,20 +40,23 @@ export function LatestBanner() {
                     <Grid.Col span={3}>
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
-                                {t('version')}2.1<br />
-                                {t('date')}2025-01-05<br />
-                                {t('size')}2.29 GB
+                                {t('version')}3.0-rc8<br />
+                                {t('date')}2025-02-01<br />
+                                {t('size')}2.40 GB
                             </Text>
                             <Menu>
                                 <Menu.Target>
                                     <Button>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
-                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
+                                    <Menu.Item component="a" href="https://packages.lingmo.org/lingmo/release/daily/202502010112/" target="_blank">
                                         {t('downloadOfficial')}
                                     </Menu.Item>
-                                    <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/hydrogen/stable/" target="_blank">
+                                    <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
                                         SourceForge
+                                    </Menu.Item>
+                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
+                                        Version 2.1 (Old version)
                                     </Menu.Item>
                                 </Menu.Dropdown>
                             </Menu>
