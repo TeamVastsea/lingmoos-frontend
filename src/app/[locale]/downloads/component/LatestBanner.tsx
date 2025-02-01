@@ -49,7 +49,7 @@ export function LatestBanner() {
                                     <Button>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
-                                    <Menu.Item component="a" href="https://packages.lingmo.org/lingmo/release/daily/202502010112/" target="_blank">
+                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/3.0rc" target="_blank">
                                         {t('downloadOfficial')}
                                     </Menu.Item>
                                     <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
