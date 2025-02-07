@@ -20,6 +20,7 @@
     color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
     font-size: var(--mantine-font-size-sm);
     font-weight: 500;
+    transition: .3s;
 
     &:hover {
         background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
@@ -28,4 +29,8 @@
 
 .linkLabel {
     margin-right: rem(5px);
+}
+
+.action {
+    transition: .3s;
 }

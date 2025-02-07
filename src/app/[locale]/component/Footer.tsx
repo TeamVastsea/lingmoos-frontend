@@ -18,17 +18,17 @@ export function Footer() {
 
                 <Group gap="xs" justify="flex-end" wrap="nowrap">
                     <a href="https://space.bilibili.com/595380133/" target="_blank" rel="noreferrer">
-                        <ActionIcon size="lg" variant="default" radius="xl">
+                        <ActionIcon size="lg" variant="default" radius="xl" className={classes.social}>
                             <IconBrandBilibili style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
                         </ActionIcon>
                     </a>
                     <a href="https://github.com/LingmoOS" target="_blank" rel="noreferrer">
-                        <ActionIcon size="lg" variant="default" radius="xl">
+                        <ActionIcon size="lg" variant="default" radius="xl" className={classes.social}>
                             <IconBrandGithub style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
                         </ActionIcon>
                     </a>
                     <a href="https://qm.qq.com/q/l8QeupIEjS" target="_blank" rel="noreferrer">
-                        <ActionIcon size="lg" variant="default" radius="xl">
+                        <ActionIcon size="lg" variant="default" radius="xl" className={classes.social}>
                             <IconBrandQq style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
                         </ActionIcon>
                     </a>

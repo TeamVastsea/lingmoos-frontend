@@ -15,7 +15,7 @@ export function LatestBanner() {
 
                 <Space h={20} />
 
-                <Grid w="100%">
+                <Grid w="100%" className={classes.grid}>
                     <Grid.Col span={9}>
                         <Stack>
                             <Text size="lg" fw={700}>{t('requirements')}</Text>
@@ -37,7 +37,7 @@ export function LatestBanner() {
                         </Stack>
                     </Grid.Col>
 
-                    <Grid.Col span={3}>
+                    <Grid.Col span={3} className={classes.download_container}>
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
                                 {t('version')}3.0-rc8<br />
@@ -46,16 +46,16 @@ export function LatestBanner() {
                             </Text>
                             <Menu>
                                 <Menu.Target>
-                                    <Button>{t('download')}</Button>
+                                    <Button className={classes.download_button}>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
                                     <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/3.0rc" target="_blank">
                                         {t('downloadOfficial')}
                                     </Menu.Item>
-                                    <Menu.Item component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
+                                    <Menu.Item className={classes.download_item} component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
                                         {t('downloadSourceForge')}
                                     </Menu.Item>
-                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
+                                    <Menu.Item className={classes.download_item} component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
                                         {t('downloadOldversion')}
                                     </Menu.Item>
                                 </Menu.Dropdown>
