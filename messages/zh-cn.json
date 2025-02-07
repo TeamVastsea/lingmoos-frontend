@@ -28,7 +28,7 @@
     "title": "下载 Lingmo OS",
     "titleDescription": "使用 Lingmo OS，享受开箱即用的高效流畅体验",
     "latestTitle": "下载最新版 Lingmo OS",
-    "latestDescription": "全新的 Lingmo OS 2.1 版本基于 Debian，还有其他功能",
+    "latestDescription": "全新的 Lingmo OS 3.0 版本基于 Debian，还有其他功能",
     "requirements": "系统需求",
     "requirementsMemory": "至少 2 GB 内存",
     "requirementsCPU": "2 GHz x86_64处理器或更高",
@@ -40,6 +40,8 @@
     "download": "下载",
     "downloadOfficial": "官方下载源",
     "downloadGithub": "GitHub Release (目前不可用)",
+    "downloadSourceForge": "SourceForge",
+    "downloadOldversion": "2.1版本 (上个版本)",
     "allDownloads": "所有下载",
     "allDownloadsDescription": "目前，Lingmo OS 镜像已共享至 Sourceforge。点击 %这里% 获取更多信息。"
   },

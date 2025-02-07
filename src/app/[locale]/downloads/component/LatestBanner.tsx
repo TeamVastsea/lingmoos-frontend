@@ -40,20 +40,23 @@ export function LatestBanner() {
                     <Grid.Col span={3} className={classes.download_container}>
                         <Stack h="100%" justify="flex-end">
                             <Text size="xs">
-                                {t('version')}2.1<br />
-                                {t('date')}2025-01-05<br />
-                                {t('size')}2.29 GB
+                                {t('version')}3.0-rc8<br />
+                                {t('date')}2025-02-01<br />
+                                {t('size')}2.37 GB
                             </Text>
                             <Menu>
                                 <Menu.Target>
                                     <Button className={classes.download_button}>{t('download')}</Button>
                                 </Menu.Target>
                                 <Menu.Dropdown>
-                                    <Menu.Item className={classes.download_item} component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
+                                    <Menu.Item component="a" href="https://releases.lingmo.org.cn/releases/3.0rc" target="_blank">
                                         {t('downloadOfficial')}
                                     </Menu.Item>
-                                    <Menu.Item className={classes.download_item} component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/hydrogen/stable/" target="_blank">
-                                        SourceForge
+                                    <Menu.Item className={classes.download_item} component="a" href="https://sourceforge.net/projects/lingmo-os/files/release/iso/helium/rc/" target="_blank">
+                                        {t('downloadSourceForge')}
+                                    </Menu.Item>
+                                    <Menu.Item className={classes.download_item} component="a" href="https://releases.lingmo.org.cn/releases/2.1" target="_blank">
+                                        {t('downloadOldversion')}
                                     </Menu.Item>
                                 </Menu.Dropdown>
                             </Menu>
